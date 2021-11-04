@@ -18,15 +18,16 @@ Vroidモデルを使ったジャンプゲーム
 ### 画面イメージ
 <img width="381" alt="vroid_jump1" src="https://user-images.githubusercontent.com/32384416/140244875-056f7931-959e-42f7-83aa-47d083b26fa8.PNG">
 
-### Plane
+### Planeを配置
 - Position X Y Z = 0, 0, 0
 - Scale **X**と**Z**を**10**に
 - Inspectorの**Materials項目**Element 0に**QS-GRASS-2.1**を設定（好きなマテリアルでよい）
 - 設定したマテリアル**QS-GRASS-2.1**の**Tiling**項目の**X**と**Y**をそれぞれ**20**に設定（マテリアル画像が荒くならないようにするため）
 
-### Cubeの配置
+### Cubeを配置
 - Position X Y Z = 0, 4, 15
 - Materialを適当に設定
+- Rigidbodyコンポーネント追加
 
 ### 3Dモデルを配置
 - 名前を**Player**とする
