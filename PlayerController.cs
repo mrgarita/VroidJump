@@ -23,7 +23,8 @@ public class PlayerController : MonoBehaviour
   void Update()
   {
     // 左マウスボタンクリック（ジャンプ中でないとき）
-    if(Input.GetMouseButtonDown(0) && !isJump){
+    if (Input.GetMouseButtonDown(0) && !isJump)
+    {
       isJump = true;
 
       // ジャンプさせる
@@ -34,6 +35,12 @@ public class PlayerController : MonoBehaviour
       AudioSource.PlayClipAtPoint(JumpSe, transform.position);  // ジャンプ時の効果音再生
     }
 
+    // ゲーム終了時のアニメーション
+    if (GameObject.Find("GameMain").GetComponent<GameController>().mode == MODE.HAPPYEND)
+    {
+      animator.SetBool("win", true);
+    }
+
   }
 
   private void OnCollisionEnter(Collision col)
@@ -41,17 +48,22 @@ public class PlayerController : MonoBehaviour
     // プレイヤーがCubeと衝突したら
     if (col.gameObject.tag == "Cube")
     {
- 
+      // 回転カメラON
+      GameObject.Find("Main Camera").GetComponent<CameraController>().rotate = true;
+
       // Cubeの移動を停止
       col.gameObject.GetComponent<CubeController>().Speed = 0f;
 
       // 衝突時のアニメーションと効果音
       animator.SetBool("damage", true);
       AudioSource.PlayClipAtPoint(DamageSe, transform.position);
+
+      // ゲームオーバー
+      GameObject.Find("GameMain").GetComponent<GameController>().mode = MODE.GAMEOVER;
     }
 
     // 地面（Plane）と接地したか？
-    if(col.gameObject.tag == "Ground")
+    if (col.gameObject.tag == "Ground")
     {
       // ジャンプ中の状態を解除
       isJump = false;
