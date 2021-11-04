@@ -21,8 +21,36 @@ Vroidモデルを使ったジャンプゲーム
 
 ## Playerのアニメーションを作成
 - Animator Controllerを作成し、PlayerAnimationとする
-- Parametersに追加 jump, damage, winを追加
+- Parametersに追加 jump, damage, winを追加し遷移を以下のようにする
+<img width="211" alt="vroid_jump2_parameter" src="https://user-images.githubusercontent.com/32384416/140259445-9596ee8b-1ce5-45ca-99d2-6526f706226c.PNG">
+- エンティティ Jump, Damage, Win, Lose, WinPoseを追加する
+<img width="599" alt="vroid_jump2_entity" src="https://user-images.githubusercontent.com/32384416/140259607-b3e57e6d-4d68-4e47-8612-80f2f186f539.PNG">
+### Run
+- Motion: RUN00_F（設定済）
+- Run -> Damage: Conditions damageがtrue
+- Run -> Jump: Conditions jumpがtrue
+- Run -> Win: Conditions winがtrue
+- Run -> Winのみ、Has Exit Timeにチェックする
 
+### Jump
+- Motion: JUMP00
+- Jump -> Run: Conditions jumpがfalse
+- Jump -> Damage: Conditions damageがtrue
+- Has Exit Timeは全てチェックを外す
+
+### Damage
+- Motion: DAMAGED01
+- Damage -> Lose: Has Exit Timeにチェック
+
+### Win
+- Motion: WIN00
+- Win -> WinPose: Has Exit Timeにチェック
+
+### Lose
+- Motion: LOSE00
+
+### WinPose
+- Motion: POSE23（決めポーズとなるため何でも好きなものを設定）
 
 ## Player用スクリプトを作成
 - [PlayerController]()を作成しシーン上の**Player**にアタッチ
@@ -34,6 +62,10 @@ Vroidモデルを使ったジャンプゲーム
 ## Cubeの改良
 - Playerとの当たり判定用に**tag**を**Cube**とする
 
-
 ## ここまでのイメージ
-![vroidjump1](https://user-images.githubusercontent.com/32384416/140249994-a59e0be0-590a-4b86-85ac-1327edb7893c.gif)
+### Cubeにぶつかった時
+![vroidjump2-1](https://user-images.githubusercontent.com/32384416/140261358-93171bfe-5f42-4306-bf8c-89de01dfccdd.gif)
+
+### Cubeうまくジャンプした時
+![vroidjump2-2](https://user-images.githubusercontent.com/32384416/140261373-62c36f95-ed5b-4539-8d25-ca86ade56b28.gif)
+
