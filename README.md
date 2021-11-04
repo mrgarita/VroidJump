@@ -5,7 +5,14 @@ Vroidモデルを使ったジャンプゲーム
 - 画像クリックでYouTube動画で確認できます
 
 [![ゲームイメージ](https://img.youtube.com/vi/KiAOWw25O24/0.jpg)](https://www.youtube.com/watch?v=KiAOWw25O24)
-## 使っているアセット
+
+## 使っているアセット（全てFree）
+- [Fantasy Skybox](https://assetstore.unity.com/packages/2d/textures-materials/sky/fantasy-skybox-free-18353?locale=ja-JP)（スカイボックス）
+- [Nature Materials vol.1](https://assetstore.unity.com/packages/2d/textures-materials/nature/nature-materials-vol-1-21113)（床のマテリアル）
+- [Fx Explosion Pack](https://assetstore.unity.com/packages/vfx/particles/fire-explosions/fx-explosion-pack-30102)（爆破エフェクト）
+- [Unity-chan! Model](https://assetstore.unity.com/packages/3d/characters/unity-chan-model-18705)（モデルのアニメとポーズ）
+- [Retro Games Sound FX](https://assetstore.unity.com/packages/audio/sound-fx/retro-games-sound-fx-27280)（効果音）
+- [Casual Game BGM #5](https://assetstore.unity.com/packages/audio/music/casual-game-bgm-5-135943)（BGM）
 
 ## シーンの作成
 ### 画面イメージ
@@ -24,6 +31,7 @@ Vroidモデルを使ったジャンプゲーム
 - 名前を**Player**とする
 - Position X Y Z = 0, 0, 0
 ### 3DモデルにAnimator Controllerを設定
+とりあえず開始したら走ってるアニメーションを設定
 - エンティティRunを作成
 - MotiionをRUN00_Fとする
 <img width="456" alt="vroid_jump1_animator" src="https://user-images.githubusercontent.com/32384416/140253804-52589592-f0e2-407b-adec-aeb49e900776.PNG">
