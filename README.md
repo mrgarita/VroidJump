@@ -28,5 +28,5 @@ Vroidモデルを使ったジャンプゲーム（画像クリックでYouTube�
 - Play On Awakeにチェック
 
 ## Cubeを動かすスクリプト
-- [CubeController](https://github.com/mrgarita/VroidJump/blob/master/CubeController.cs){:target="_blank"}を作成しCubeにアタッチ
+- [CubeController](https://github.com/mrgarita/VroidJump/blob/master/CubeController.cs){:target="_blank"} を作成しCubeにアタッチ
 
