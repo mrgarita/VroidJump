@@ -1,7 +1,7 @@
 # VroidJump 2
 Vroidモデルを使ったジャンプゲーム
 
-## 完成イメージです
+## 完成した際のイメージです
 - 画像クリックでYouTube動画で確認できます
 
 [![ゲームイメージ](https://img.youtube.com/vi/KiAOWw25O24/0.jpg)](https://www.youtube.com/watch?v=KiAOWw25O24)
@@ -16,35 +16,36 @@ Vroidモデルを使ったジャンプゲーム
 
 ## Playerにコンポーネント追加
 - Rigidbody
-- Capsule Collider（イメージのモデルではCenter Y 0.8、Heightに1.6を設定、Radiusは0.3、3Dモデルに合わせて調整してください）
-- Audio Listener（Main Cameraに最初からついていたAudio Listenerはこの時点で外す）
+- Capsule Collider（イメージのモデルでは**Center Y** 0.8、**Height**に1.6を設定、**Radius**は0.3、3Dモデルに合わせて調整してください）
+- Audio Listener（Main Cameraに最初からついていたAudio Listenerはこの時点で外しておく）
 
 ## Playerのアニメーションを作成
-- Animator Controllerを作成し、PlayerAnimationとする
-- Parametersに追加 jump, damage, winを追加し遷移を以下のようにする
+- Animator Controllerを作成し、名前を**PlayerAnimation**とする
+- Parametersに**jump, damage, win**の3つのパラメタを追加
 <img width="211" alt="vroid_jump2_parameter" src="https://user-images.githubusercontent.com/32384416/140259445-9596ee8b-1ce5-45ca-99d2-6526f706226c.PNG">
-- エンティティ Jump, Damage, Win, Lose, WinPoseを追加する
+- エンティティ **Jump, Damage, Win, Lose, WinPose**を追加する
 <img width="599" alt="vroid_jump2_entity" src="https://user-images.githubusercontent.com/32384416/140259607-b3e57e6d-4d68-4e47-8612-80f2f186f539.PNG">
+
 ### Run
 - Motion: RUN00_F（設定済）
-- Run -> Damage: Conditions damageがtrue
-- Run -> Jump: Conditions jumpがtrue
-- Run -> Win: Conditions winがtrue
+- **Run -> Damage**: Conditions **damage**が**true**
+- **Run -> Jump**: Conditions **jump**が**true**
+- **Run -> Win**: Conditions **win**が**true**
 - Run -> Winのみ、Has Exit Timeにチェックする
 
 ### Jump
 - Motion: JUMP00
-- Jump -> Run: Conditions jumpがfalse
-- Jump -> Damage: Conditions damageがtrue
+- **Jump -> Run**: Conditions **jump**が**false**
+- **Jump -> Damage**: Conditions **damage**が**true**
 - Has Exit Timeは全てチェックを外す
 
 ### Damage
 - Motion: DAMAGED01
-- Damage -> Lose: Has Exit Timeにチェック
+- **Damage -> Lose**: Has Exit Timeにチェック
 
 ### Win
 - Motion: WIN00
-- Win -> WinPose: Has Exit Timeにチェック
+- **Win -> WinPose**: Has Exit Timeにチェック
 
 ### Lose
 - Motion: LOSE00
@@ -52,9 +53,11 @@ Vroidモデルを使ったジャンプゲーム
 ### WinPose
 - Motion: POSE23（決めポーズとなるため何でも好きなものを設定）
 
+設定を終えたら、**PlayerAnimation**をPlayerにアタッチ
+
 ## Player用スクリプトを作成
 - [PlayerController]()を作成しシーン上の**Player**にアタッチ
-- アタッチ後、InspectorのJump Power、Jump Se、Damage Seをそれぞれ設定
+- アタッチ後、Inspectorの**Jump Power、Jump Se、Damage Se**をそれぞれ設定
 - Jump Powerは5.5くらい
 - Jump Seはジャンプした時の効果音（AudioClip）を設定
 - Damage SeはCubeとPlayerがぶつかった時の効果音（AudioClip）を設定
