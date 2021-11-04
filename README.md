@@ -1,5 +1,7 @@
 # VroidJump 1
-Vroidモデルを使ったジャンプゲーム（画像クリックでYouTube動画で確認できます）
+Vroidモデルを使ったジャンプゲーム
+**完成イメージ**
+画像クリックでYouTube動画で確認できます
 
 [![ゲームイメージ](https://img.youtube.com/vi/KiAOWw25O24/0.jpg)](https://www.youtube.com/watch?v=KiAOWw25O24)
 
@@ -30,3 +32,5 @@ Vroidモデルを使ったジャンプゲーム（画像クリックでYouTube�
 ## Cubeを動かすスクリプト
 - [CubeController](https://github.com/mrgarita/VroidJump/blob/master/CubeController.cs) を作成しCubeにアタッチ
 
+## ここまでのイメージ
+![vroidjump1](https://user-images.githubusercontent.com/32384416/140249994-a59e0be0-590a-4b86-85ac-1327edb7893c.gif)
