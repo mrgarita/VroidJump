@@ -1,4 +1,4 @@
-# VroidJump 2
+# VroidJump (2/3)
 Vroidモデルを使ったジャンプゲーム
 
 ## 完成した際のイメージです
