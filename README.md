@@ -5,6 +5,7 @@ Vroidモデルを使ったジャンプゲーム
 - 画像クリックでYouTube動画で確認できます
 
 [![ゲームイメージ](https://img.youtube.com/vi/KiAOWw25O24/0.jpg)](https://www.youtube.com/watch?v=KiAOWw25O24)
+## 使っているアセット
 
 ## シーンの作成
 ### 画面イメージ
@@ -20,8 +21,12 @@ Vroidモデルを使ったジャンプゲーム
 - Materialを適当に設定
 
 ### 3Dモデルを配置
-- 名前をPlayerとする
+- 名前を**Player**とする
 - Position X Y Z = 0, 0, 0
+### 3DモデルにAnimator Controllerを設定
+- エンティティRunを作成
+- MotiionをRUN00_Fとする
+<img width="456" alt="vroid_jump1_animator" src="https://user-images.githubusercontent.com/32384416/140253804-52589592-f0e2-407b-adec-aeb49e900776.PNG">
 
 ### SkyBoxは適当に設定
 - 画面イメージでは[Fantasy Skybox FREE](https://assetstore.unity.com/packages/2d/textures-materials/sky/fantasy-skybox-free-18353?locale=ja-JP)を使った
