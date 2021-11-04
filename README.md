@@ -23,12 +23,12 @@ Vroidモデルを使ったジャンプゲーム
 
 ## ゲームクリア時のBGM設定
 - シーンにAudioSourceを追加し、名前を**ClearBGM**とする
-- ClearBGMのAudioClipにゲームクリア時の曲を設定（Play On Awakeにチェック）
+- ClearBGMの**AudioClip**に**BGM_01**（ゲームクリア時の曲）を設定（Play On Awakeにチェック）
 - ClearBGMの**Audio Sourceコンポーネントのチェックは外しておく**（シーン起動時に鳴らないようにするため）
 
 ## ゲームクリアとゲームオーバー時のプレイヤーを中心に回転するカメラ
-- スクリプト[CameraController](https://github.com/mrgarita/VroidJump/blob/game_controller/CameraController.cs)を作成し、Main Cameraにアタッチ
-- アタッチ後、Inspectorウインドウの**Target**を**Player**とし、**Distance**を**3**に設定
+- スクリプト[CameraController](https://github.com/mrgarita/VroidJump/blob/game_controller/CameraController.cs)を作成し、**Main Camera**にアタッチ
+- アタッチ後、Inspectorウインドウの**Target**を**Player**とし、**Distance**に**3**に設定
 
 ## Cubeの改良
 - ゲームクリア時にCubeを爆破させて消すためスクリプト[CubeController](https://github.com/mrgarita/VroidJump/blob/game_controller/CubeController.cs)を修正
