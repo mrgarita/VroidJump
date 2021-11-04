@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CubeController : MonoBehaviour
 {
-  public float Speed;       // ˆÚ“®‘¬“x
+  public float Speed;       // ç§»å‹•é€Ÿåº¦
   
   // Start is called before the first frame update
   void Start()
@@ -15,7 +15,7 @@ public class CubeController : MonoBehaviour
   // Update is called once per frame
   void Update()
   {
-    // Cube‚ðˆÚ“®
+    // Cubeã‚’ç§»å‹•
     transform.position += Vector3.back * Speed * Time.deltaTime;
   }
 }
