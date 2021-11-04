@@ -22,8 +22,11 @@ Vroidモデルを使ったジャンプゲーム
 ## Playerのアニメーションを作成
 - Animator Controllerを作成し、名前を**PlayerAnimation**とする
 - Parametersに**jump, damage, win**の3つのパラメタを追加
+
 <img width="211" alt="vroid_jump2_parameter" src="https://user-images.githubusercontent.com/32384416/140259445-9596ee8b-1ce5-45ca-99d2-6526f706226c.PNG">
+
 - エンティティ **Jump, Damage, Win, Lose, WinPose**を追加する
+
 <img width="599" alt="vroid_jump2_entity" src="https://user-images.githubusercontent.com/32384416/140259607-b3e57e6d-4d68-4e47-8612-80f2f186f539.PNG">
 
 ### Run
