@@ -20,8 +20,9 @@ Vroidモデルを使ったジャンプゲーム
 
 ### Plane
 - Position X Y Z = 0, 0, 0
-- Scale XとZを10に
-- Materialを適当に設定
+- Scale **X**と**Z**を**10**に
+- Inspectorの**Materials項目**Element 0に**QS-GRASS-2.1**を設定（好きなマテリアルでよい）
+- 設定したマテリアル**QS-GRASS-2.1**の**Tiling**項目の**X**と**Y**をそれぞれ**20**に設定（マテリアル画像が荒くならないようにするため）
 
 ### Cubeの配置
 - Position X Y Z = 0, 4, 15
@@ -30,22 +31,23 @@ Vroidモデルを使ったジャンプゲーム
 ### 3Dモデルを配置
 - 名前を**Player**とする
 - Position X Y Z = 0, 0, 0
+
 ### 3DモデルにAnimator Controllerを設定
 とりあえず開始したら走ってるアニメーションを設定
-- エンティティRunを作成
-- MotiionをRUN00_Fとする
+- エンティティ**Run**を作成
+- Motiionを**RUN00_F**とする（走っているアニメ）
 <img width="456" alt="vroid_jump1_animator" src="https://user-images.githubusercontent.com/32384416/140253804-52589592-f0e2-407b-adec-aeb49e900776.PNG">
 
 ### SkyBoxは適当に設定
 - 画面イメージでは[Fantasy Skybox FREE](https://assetstore.unity.com/packages/2d/textures-materials/sky/fantasy-skybox-free-18353?locale=ja-JP)を使った
  
-### AudioSourceを作成
-- 名前をBGMとしてBGM用のAudioClipを設定しておく
+### シーンにAudioSourceを追加
+- 名前を**BGM**として**AudioClip**に**BGM_04**（起動時のBGM）を設定
 - Play On Awakeにチェック
 
 ## Cubeを動かすスクリプト
 - [CubeController](https://github.com/mrgarita/VroidJump/blob/master/CubeController.cs) を作成しCubeにアタッチ
-- アタッチ後、InspectorウインドウのSpeed項目に移動速度（4くらいが適当）を設定
+- アタッチ後、Inspectorウインドウの**Speed**項目に移動速度（**4**くらいが適当）を設定
 
 ## ここまでのイメージ
 ![vroidjump1](https://user-images.githubusercontent.com/32384416/140249994-a59e0be0-590a-4b86-85ac-1327edb7893c.gif)
