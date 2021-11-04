@@ -1,6 +1,7 @@
 # VroidJump 1
 Vroidモデルを使ったジャンプゲーム
-**完成イメージ**
+
+## 完成イメージです
 - 画像クリックでYouTube動画で確認できます
 
 [![ゲームイメージ](https://img.youtube.com/vi/KiAOWw25O24/0.jpg)](https://www.youtube.com/watch?v=KiAOWw25O24)
@@ -24,7 +25,7 @@ Vroidモデルを使ったジャンプゲーム
 
 ### SkyBoxは適当に設定
 - 画面イメージでは[Fantasy Skybox FREE](https://assetstore.unity.com/packages/2d/textures-materials/sky/fantasy-skybox-free-18353?locale=ja-JP)を使った
-- 
+ 
 ### AudioSourceを作成
 - 名前をBGMとしてBGM用のAudioClipを設定しておく
 - Play On Awakeにチェック
