@@ -65,6 +65,9 @@ Vroidモデルを使ったジャンプゲーム
 - Jump Seはジャンプした時の効果音（AudioClip）を設定
 - Damage SeはCubeとPlayerがぶつかった時の効果音（AudioClip）を設定
 
+## Planeの改良
+- Playerの接地判定のためPlaneのtagを**Ground**とする
+
 ## Cubeの改良
 - Playerとの当たり判定用に**tag**を**Cube**とする
 
