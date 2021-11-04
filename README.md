@@ -51,3 +51,5 @@ Vroidモデルを使ったジャンプゲーム
 
 ## ここまでのイメージ
 ![vroidjump1](https://user-images.githubusercontent.com/32384416/140249994-a59e0be0-590a-4b86-85ac-1327edb7893c.gif)
+
+[次のステップ＞＞ VroidJump (2/3)](https://github.com/mrgarita/VroidJump/tree/player_controller)
