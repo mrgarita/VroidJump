@@ -45,6 +45,7 @@ Vroidモデルを使ったジャンプゲーム
 
 ## Cubeを動かすスクリプト
 - [CubeController](https://github.com/mrgarita/VroidJump/blob/master/CubeController.cs) を作成しCubeにアタッチ
+- アタッチ後、InspectorウインドウのSpeed項目に移動速度（4くらいが適当）を設定
 
 ## ここまでのイメージ
 ![vroidjump1](https://user-images.githubusercontent.com/32384416/140249994-a59e0be0-590a-4b86-85ac-1327edb7893c.gif)
