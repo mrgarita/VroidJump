@@ -1,5 +1,8 @@
-# VroidJump
+# VroidJump 1
 Vroidモデルを使ったジャンプゲーム
+
+こんなゲームを作ります。
+[![ゲームイメージ](https://img.youtube.com/vi/KiAOWw25O24/0.jpg)](https://www.youtube.com/watch?v=KiAOWw25O24)
 
 ## シーンの作成
 ### 画面イメージ
