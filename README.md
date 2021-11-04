@@ -78,3 +78,4 @@ Vroidモデルを使ったジャンプゲーム
 ### Cubeうまくジャンプした時
 ![vroidjump2-2](https://user-images.githubusercontent.com/32384416/140261373-62c36f95-ed5b-4539-8d25-ca86ade56b28.gif)
 
+[次のステップ＞＞ VroidJump (3/3)](https://github.com/mrgarita/VroidJump/tree/game_controller)
