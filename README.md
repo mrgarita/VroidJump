@@ -59,7 +59,7 @@ Vroidモデルを使ったジャンプゲーム
 設定を終えたら、**PlayerAnimation**をPlayerにアタッチ
 
 ## Player用スクリプトを作成
-- [PlayerController]()を作成しシーン上の**Player**にアタッチ
+- [PlayerController](https://github.com/mrgarita/VroidJump/blob/player_controller/PlayerController.cs)を作成しシーン上の**Player**にアタッチ
 - アタッチ後、Inspectorの**Jump Power、Jump Se、Damage Se**をそれぞれ設定
 - Jump Powerは5.5くらい
 - Jump Seはジャンプした時の効果音（AudioClip）を設定
