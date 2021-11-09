@@ -14,17 +14,17 @@ Vroidモデルを使ったジャンプゲーム
 - [Retro Games Sound FX](https://assetstore.unity.com/packages/audio/sound-fx/retro-games-sound-fx-27280)（効果音）
 - [Casual Game BGM #5](https://assetstore.unity.com/packages/audio/music/casual-game-bgm-5-135943)（BGM）
 
+## ゲームクリア時のBGMをシーンに配置しておく
+- シーンにAudioSourceを追加し、名前を**ClearBGM**とする
+- ClearBGMの**AudioClip**に**BGM_01**（ゲームクリア時の曲）を設定（Play On Awakeにチェック）
+- ClearBGMの**Audio Sourceコンポーネントのチェックは外しておく**（シーン起動時に鳴らないようにするため）
+
 ## Game全体の処理用
-- シーンに空のオブジェクト追加
+- シーンにCreate Emptyで空のオブジェクト追加
 - 名前を**GameMain**とする
 
 ## Game全体のスクリプト
 - スクリプト[GameController](https://github.com/mrgarita/VroidJump/blob/game_controller/GameController.cs)を作成し、GameMainにアタッチ
-
-## ゲームクリア時のBGM設定
-- シーンにAudioSourceを追加し、名前を**ClearBGM**とする
-- ClearBGMの**AudioClip**に**BGM_01**（ゲームクリア時の曲）を設定（Play On Awakeにチェック）
-- ClearBGMの**Audio Sourceコンポーネントのチェックは外しておく**（シーン起動時に鳴らないようにするため）
 
 ## ゲームクリアとゲームオーバー時のプレイヤーを中心に回転するカメラ
 - スクリプト[CameraController](https://github.com/mrgarita/VroidJump/blob/game_controller/CameraController.cs)を作成し、**Main Camera**にアタッチ
