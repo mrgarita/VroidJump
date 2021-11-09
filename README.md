@@ -35,8 +35,9 @@ Vroidモデルを使ったジャンプゲーム
 
 ### 3DモデルにAnimator Controllerを設定
 とりあえず開始したら走ってるアニメーションを設定する
-Animator Controllerを作成し、名前を**PlayerAnimation**とする
+- Animator Controllerを作成し、名前を**PlayerAnimation**とする
 
+アニメーションの設定
 - エンティティ**Run**を作成
 - Motiionを**RUN00_F**とする（走っているアニメ）
 <img width="456" alt="vroid_jump1_animator" src="https://user-images.githubusercontent.com/32384416/140253804-52589592-f0e2-407b-adec-aeb49e900776.PNG">
