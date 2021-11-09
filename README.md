@@ -42,6 +42,8 @@ Vroidモデルを使ったジャンプゲーム
 - Motiionを**RUN00_F**とする（走っているアニメ）
 <img width="456" alt="vroid_jump1_animator" src="https://user-images.githubusercontent.com/32384416/140253804-52589592-f0e2-407b-adec-aeb49e900776.PNG">
 
+- **PlayerAnimation**を**Player**にアタッチする
+
 ### SkyBoxは適当に設定
 - 画面イメージでは[Fantasy Skybox FREE](https://assetstore.unity.com/packages/2d/textures-materials/sky/fantasy-skybox-free-18353?locale=ja-JP)を使った
  
