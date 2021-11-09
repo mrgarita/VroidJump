@@ -19,8 +19,8 @@ Vroidモデルを使ったジャンプゲーム
 - Capsule Collider（イメージのモデルでは**Center Y** 0.8、**Height**に1.6を設定、**Radius**は0.3、3Dモデルに合わせて調整してください）
 - Audio Listener（Main Cameraに最初からついていたAudio Listenerはこの時点で外しておく）
 
-## Playerのアニメーションを作成
-- Animator Controllerを作成し、名前を**PlayerAnimation**とする
+## Playerのアニメーションを改良する
+- 作成済みの**PlayerAnimation**（Animator Controller）をダブルクリックして開く
 - Parametersに**jump, damage, win**の3つのパラメタを追加
 
 <img width="211" alt="vroid_jump2_parameter" src="https://user-images.githubusercontent.com/32384416/140259445-9596ee8b-1ce5-45ca-99d2-6526f706226c.PNG">
@@ -55,8 +55,6 @@ Vroidモデルを使ったジャンプゲーム
 
 ### WinPose
 - Motion: POSE23（決めポーズとなるため何でも好きなものを設定）
-
-設定を終えたら、**PlayerAnimation**をPlayerにアタッチ
 
 ## Player用スクリプトを作成
 - [PlayerController](https://github.com/mrgarita/VroidJump/blob/player_controller/PlayerController.cs)を作成しシーン上の**Player**にアタッチ
