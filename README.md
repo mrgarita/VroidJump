@@ -32,7 +32,7 @@ Vroidモデルを使ったジャンプゲーム
 
 ## Cubeの改良
 - ゲームクリア時にCubeを爆破させて消すためスクリプト[CubeController](https://github.com/mrgarita/VroidJump/blob/game_controller/CubeController.cs)を修正
-- Inspectorの**Effect**（爆破エフェクト）に**Explosion7**、**Bang Se**（爆破音）に**Shoot08**を設定（お好みでなんでも良い）
+- Inspectorの**Effect**（爆破エフェクト）に**Explosion6**、**Bang Se**（爆破音）に**Shoot08**を設定（お好みでなんでも良い）
 
 ## Playerの改良
 - ゲームオーバーとゲームクリア処理に対応させるため、[PlayerController](https://github.com/mrgarita/VroidJump/blob/game_controller/PlayerController.cs)スクリプト修正
