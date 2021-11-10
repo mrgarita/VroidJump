@@ -15,7 +15,7 @@ Vroidモデルを使ったジャンプゲーム
 - [Casual Game BGM #5](https://assetstore.unity.com/packages/audio/music/casual-game-bgm-5-135943)（BGM）
 
 ## Playerにコンポーネント追加
-- Rigidbody
+- Rigidbodyを追加し、Constraintsの**Freeze Rotation項目X,Y,Zを全てチェック**（Cubetとぶつかったとき転ばないようにするため）
 - Capsule Collider（イメージのモデルでは**Center Y** 0.8、**Height**に1.6を設定、**Radius**は0.3、3Dモデルに合わせて調整してください）
 - Audio Listener（Main Cameraに最初からついていたAudio Listenerはこの時点で外しておく）
 
