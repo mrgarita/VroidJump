@@ -59,9 +59,9 @@ Vroidモデルを使ったジャンプゲーム
 ## Player用スクリプトを作成
 - [PlayerController](https://github.com/mrgarita/VroidJump/blob/player_controller/PlayerController.cs)を作成しシーン上の**Player**にアタッチ
 - アタッチ後、Inspectorの**Jump Power、Jump Se、Damage Se**をそれぞれ設定
-- Jump Powerは5.5くらい
-- Jump Seはジャンプした時の効果音（AudioClip）を設定
-- Damage SeはCubeとPlayerがぶつかった時の効果音（AudioClip）を設定
+- Jump Powerは5.5くらいが適当
+- Jump Seはジャンプした時の効果音（AudioClip）を設定（サンプルではRetro Games Sound FXのJump1を使用）
+- Damage SeはCubeとPlayerがぶつかった時の効果音（AudioClip）を設定（サンプルではRetro Games Sound FXのHit7を使用）
 
 ## Planeの改良
 - Playerの接地判定のためPlaneのtagを**Ground**とする
