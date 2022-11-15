@@ -17,7 +17,6 @@ Vroidモデルを使ったジャンプゲーム
 ## Playerにコンポーネント追加
 - Rigidbodyを追加し、Constraintsの**Freeze Rotation項目X,Y,Zを全てチェック**（Cubeとぶつかったとき転ばないようにするため）
 - Capsule Collider（イメージのモデルでは**Center Y** 0.8、**Height**に1.6を設定、**Radius**は0.3、3Dモデルに合わせて調整してください）
-- Audio Listener（Main Cameraに最初からついていたAudio Listenerはこの時点で外しておく）
 
 ## Playerのアニメーションを改良する
 - 作成済みの**PlayerAnimation**（Animator Controller）をダブルクリックして開く
